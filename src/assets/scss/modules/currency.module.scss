@@ -1,0 +1,42 @@
+.wrapper {
+  max-width: $app-width * 0.8;
+  @include center;
+
+  border-radius: $radius;
+  @include flex($justify: space-between);
+  @include shadow($blur: 1px);
+
+  .from,
+  .to {
+    padding: 0.7rem;
+  }
+
+  .flip {
+    @include shadow($blur: 0px);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    @include flex;
+
+    img {
+      position: absolute;
+    }
+  }
+
+  .from {
+    input {
+      width: 45%;
+      margin: 0 0.3rem;
+      padding: 0.2rem;
+      @include shadow($blur: 0px);
+      border-radius: $radius;
+
+      -moz-appearance: textfield;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+    }
+  }
+}

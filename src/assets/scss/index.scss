@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all $duration * 0.2 ease-out;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: $secondary-color;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+#root {
+  min-height: 100vh !important;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content auto min-content;
+}

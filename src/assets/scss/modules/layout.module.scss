@@ -1,0 +1,35 @@
+$pd: 1rem;
+
+.header {
+  padding: $pd 0;
+
+  .selector {
+    margin-left: auto;
+  }
+
+  background-color: $primary-color;
+
+  * {
+    color: white;
+  }
+}
+
+.main {
+  .content {
+    padding: $pd 0;
+  }
+}
+
+.footer {
+  padding: $pd 0;
+  background-color: $primary-color;
+
+  .content {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+
+  * {
+    color: white;
+  }
+}

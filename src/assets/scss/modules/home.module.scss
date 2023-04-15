@@ -1,0 +1,22 @@
+.wrapper {
+  max-width: $app-width * 0.5;
+  @include center;
+
+  .item {
+    text-decoration: none !important;
+    border-radius: $radius;
+    margin-bottom: 0.5rem;
+    @include flex($justify: space-between);
+    @include shadow($blur: 1px);
+
+    &:hover {
+      @include shadow($blur: 7px);
+      transition: all 300ms ease-out;
+    }
+
+    .from,
+    .to {
+      padding: 0.7rem;
+    }
+  }
+}
